@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input1" />
+    <input type="text" id="input2" />
+    <h1 id="result">RESULT</h1>
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+    <script>
+      function add() {
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        result = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerText = result;
+      }
+      function sub() {
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        result = parseInt(a) - parseInt(b);
+        document.getElementById("result").innerText = result;
+      }
+      function mul() {
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        result = parseInt(a) * parseInt(b);
+        document.getElementById("result").innerText = result;
+      }
+      function div() {
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        result = parseInt(a) / parseInt(b);
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>
